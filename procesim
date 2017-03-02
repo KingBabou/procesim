@@ -1,0 +1,12 @@
+#!/bin/sh
+
+DIR=$(dirname $0)
+PRG=$(basename $0)
+
+if [ ! -x "$DIR/lib/$PRG" ]; then
+	echo 1>&2 "'$DIR/lib/$PRG' can not be executed. Missing program?"
+	exit 1
+fi 
+
+exec env LD_LIBRARY_PATH="$DIR/lib" "$DIR/lib/ld-linux.so.2" "$DIR/lib/$PRG" "$@"
+
