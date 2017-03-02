@@ -1,0 +1,8 @@
+Package: procesim
+Version: 1.0.0
+Section: base
+Priority: optional
+Architecture: all
+Depends: bash
+Maintainer: Thibaut Nouguier <nouguier.thibaut@gmail.com>
+Description: Executable pour le TP Procesim ALM2
