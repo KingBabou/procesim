@@ -1,0 +1,6 @@
+#!/bin/bash
+
+chmod go+x /usr/local/bin/procesim
+chmod go+x /usr/local/bin/masm
+
+exit 0
